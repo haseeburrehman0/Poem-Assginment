@@ -9,7 +9,7 @@ div{
     margin: 4px;
 }
 table{
-   background-color: black;
+   background-color: blueviolet;
    color: white;
    padding: 20px;
    width: 100%;
@@ -55,4 +55,7 @@ a{
 a:hover{
     color: aqua;
     text-shadow: 2px 2px 3px black;
+}
+h1:hover{
+    text-shadow: 5px 5px 5px gray;
 }
