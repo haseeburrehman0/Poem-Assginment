@@ -44,9 +44,14 @@
     font-size: 12px;
 }
 
-/* .nav-two-hover:hover{
-    border-top: 2px solid var(--primary);
-} */
+.nav-two {
+    width: 100%;
+    height: 80px;
+}
+
+.nav-two-hover:hover{
+    border-bottom: 5px solid var(--primary);
+}
 
 
 
