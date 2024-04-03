@@ -6,7 +6,7 @@
 
 :root {
     --primary: #48afff;
-    --secondry:  #000;
+    --secondry: #000;
 }
 
 #Container {
@@ -47,7 +47,7 @@
     width: 90px;
     height: 40px;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -59,7 +59,7 @@
     height: 65px;
 }
 
-.nav-two-hover:hover{
+.nav-two-hover:hover {
     border-bottom: 5px solid var(--primary);
 }
 
@@ -89,7 +89,7 @@
     margin-left: 80px;
 }
 
-.card-desgin p{
+.card-desgin p {
     font-size: 14px;
     font-weight: bold;
 }
@@ -158,18 +158,21 @@
         height: 40px;
         margin-top: 7px;
     }
+
     #logo {
         width: 100px;
     }
+
     #bar {
         width: 25px;
     }
-    .carousel-item img {
-        height: 120px;
-    }
-  }
 
-  @media only screen and (max-width: 622px) {
+    .carousel-item img {
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 622px) {
     .card-desgin img {
         width: 50%;
         margin-left: 40px;
@@ -179,7 +182,7 @@
         font-size: 12px;
 
     }
-    
+
     .card-desgin {
         width: 190px;
         height: 280px;
@@ -190,9 +193,47 @@
         display: flex;
         justify-content: space-between;
     }
+
     .div-box img {
         width: 30px;
         height: 30px;
         margin-top: 16px;
     }
-  }  
+}
+
+@media only screen and (max-width: 400px) {
+    .card-desgin img {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .card-desgin P {
+        font-size: 12px;
+
+    }
+
+    .card-desgin {
+        width: 160px;
+        height: 280px;
+        background-color: #fff;
+    }
+
+    .section-box-contant {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div-box img {
+        width: 30px;
+        height: 30px;
+        margin-top: 16px;
+    }
+    .carousel-item img {
+        height: 110px;
+    }
+    .input-nav input {
+        width: 180px;
+        height: 35px;
+        margin-top: 10px;
+    }
+}
