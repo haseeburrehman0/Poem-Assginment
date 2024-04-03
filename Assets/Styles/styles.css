@@ -152,18 +152,17 @@
 
 
 
-
 @media only screen and (max-width: 622px) {
     .input-nav input {
         width: 200px;
-        height: 42px;
+        height: 40px;
         margin-top: 7px;
     }
     #logo {
         width: 100px;
     }
     #bar {
-        width: 30px;
+        width: 25px;
     }
     .carousel-item img {
         height: 120px;
