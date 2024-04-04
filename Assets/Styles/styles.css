@@ -130,7 +130,13 @@
     height: 51px;
     border-radius: 10px;
     background-color: var(--third);
+    transform-origin: .5 ease;
 }
+
+.shop-price p:hover {
+    background-color: var(--primary);
+}
+
 
 
 
@@ -256,5 +262,8 @@
         width: 180px;
         height: 35px;
         margin-top: 10px;
+    }
+    .shop-price p{
+       margin-left: 50px;
     }
 }
