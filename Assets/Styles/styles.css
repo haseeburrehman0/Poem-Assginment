@@ -53,6 +53,18 @@
     color: #fff;
 }
 
+#nav-button-one:hover {
+    background-color: #000;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#nav-button-two:hover {
+    /* background-color: white; */
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
 /*============== NAVBAR TWO STYLING ============*/
 
 .nav-two {
@@ -115,7 +127,7 @@
     width: 100%;
 }
 
-/*============== PRICES BOXES ============*/
+/*============== PRICES BOXES STYLING ============*/
 
 .box-Price {
     width: 270px;
@@ -130,16 +142,19 @@
     height: 51px;
     border-radius: 10px;
     background-color: var(--third);
-    transform-origin: .5 ease;
 }
 
 .shop-price p:hover {
     background-color: var(--primary);
+    transition: 0.5s ease-in-out;
+    color: var(--third);
 }
 
+/*============== BRAND SECTION STYLING ============*/
 
-
-
+.brand-section img {
+    width: 70px;
+}
 
 
 
@@ -228,7 +243,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .card-desgin img {
         width: 50%;
         margin-left: 40px;
