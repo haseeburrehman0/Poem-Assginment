@@ -156,9 +156,9 @@
     width: 70px;
 }
 
-#sponserd-box> div img {
+#sponserd-box>div img {
     width: 70px;
-} 
+}
 
 /*============== CUSTOM SECTION STYLING ============*/
 
@@ -167,7 +167,21 @@
     height: 130px;
     background-color: #fff;
     border-radius: 10px;
+    overflow: hidden;
 }
+
+/*============== FEEDBACK SECTION STYLING ============*/
+
+.feedback-box {
+    width: 360px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+}
+
+
+
 
 
 
@@ -284,15 +298,18 @@
         height: 30px;
         margin-top: 16px;
     }
+
     .carousel-item img {
         height: 110px;
     }
+
     .input-nav input {
         width: 180px;
         height: 35px;
         margin-top: 10px;
     }
-    .shop-price p{
-       margin-left: 50px;
+
+    .shop-price p {
+        margin-left: 50px;
     }
 }
