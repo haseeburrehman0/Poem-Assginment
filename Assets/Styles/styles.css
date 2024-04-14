@@ -158,8 +158,17 @@
 
 #sponserd-box> div img {
     width: 70px;
-
 } 
+
+/*============== CUSTOM SECTION STYLING ============*/
+
+.custom-box {
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 
 
 
