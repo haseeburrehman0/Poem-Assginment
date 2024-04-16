@@ -266,7 +266,7 @@
 
 .footer-section {
     width: 100%;
-    height: 300px;
+    height: 430px;
     background-color: var(--primary);
 } 
 
@@ -283,8 +283,10 @@
     width: 300px;
 }
 
-#footer-img2 {
-    
+.footer-two {
+    width: 100%;
+    height: 60px;
+    background-color: #0078d5;
 }
 
 
