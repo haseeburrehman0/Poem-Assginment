@@ -245,6 +245,14 @@
     background-color: orange;
 }
 
+/*============== REASON SECTION STYLING ============*/
+
+.approved-section {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+}
+
 
 
 
