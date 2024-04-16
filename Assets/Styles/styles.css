@@ -198,6 +198,7 @@
     border-radius: 5px;
     overflow: hidden;
     background-color: #fff;
+    box-shadow: 2px 5px 5px gray;
 }
 
 .box-recommended {
@@ -219,7 +220,30 @@
     left: 13px;
 }
 
+/*============== REASON SECTION STYLING ============*/
 
+.reason-box {
+    width: 550px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0078d5;
+}
+
+.reason-box div img {
+    width: 80%;
+}
+
+.reason-box div button {
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    /* margin-left: 10px; */
+    margin-top: 15px;
+    background-color: orange;
+}
 
 
 
@@ -356,5 +380,35 @@
     .custom-box {
         width: 70px;
         height: 70px;
+    }
+    .Recommended-box  {
+        width: 300px;
+        height: 600px;
+    }
+    .Recommended-box video {
+        width: 300px;
+    }
+    .box-recommended {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        z-index: 1;
+        box-shadow: 5px 5px 20px #000;
+        position: relative;
+        bottom: 60px;
+        left: 100px;
+    }
+    .box-recommended img {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: 13px;
+        left: 13px;
+    }
+    .reason-box div h4 {
+        font-size: 10px;
+    }
+    .reason-box div button {
+        margin-right: 40px;
     }
 }
