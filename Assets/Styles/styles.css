@@ -42,6 +42,14 @@
     padding: 10px;
 }
 
+.input-nav img {
+    width: 13px;
+    background-color: transparent;
+    position: relative;
+    right: 30px;
+    bottom: 6px;
+}
+
 #nav-button-one {
     width: 90px;
     height: 40px;
@@ -463,6 +471,13 @@
     }
     .footer-log-img {
         width: 50px;
+    }
+    .input-nav img {
+        width: 12px;
+        background-color: transparent;
+        position: relative;
+        right: 22px;
+        bottom: 4px;
     }
 }
 
