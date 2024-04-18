@@ -245,7 +245,7 @@
     background-color: orange;
 }
 
-/*============== REASON SECTION STYLING ============*/
+/*============== APPROVED SECTION STYLING ============*/
 
 .approved-section {
     width: 100%;
@@ -262,13 +262,17 @@
     font-size: 12px;
 }
 
-/*============== REASON SECTION STYLING ============*/
+/*============== FOOTER SECTION STYLING ============*/
 
 .footer-section {
     width: 100%;
-    height: 430px;
+    height: 460px;
     background-color: var(--primary);
 } 
+
+.foter-content div a {
+    line-height: 40px;
+}
 
 .foter-content img {
     width: 150px;
@@ -392,7 +396,7 @@
     }
 
     .card-desgin {
-        width: 175px;
+        width: 185px;
         height: 280px;
         background-color: #fff;
     }
@@ -453,5 +457,25 @@
     }
     .approved-section div img {
         width: 20%;
+    }
+    #footer-images {
+        display: none;
+    }
+    .footer-log-img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-desgin {
+        width: 155px;
+        height: 280px;
+        background-color: #fff;
+    }
+    #footer-log-img {
+        width: 100px;
+    }
+    .footer-text-h4 h4 {
+        font-size: 18px;
     }
 }
