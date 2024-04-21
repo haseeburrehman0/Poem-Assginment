@@ -500,9 +500,8 @@
     .scroller {
         margin-top: 72px;
     }
-    .footer-three-icon i{
-        font-size: 30px;
-        color: gray;
+    .footer-three-icon img {
+        width: 35px;
     }
 }
 
