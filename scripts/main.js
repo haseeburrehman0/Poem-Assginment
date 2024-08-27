@@ -1,3 +1,4 @@
+// airpods object list
 const airPodsList = [
     {
         title: "Apple AirPods Pro (2nd Generation)",
@@ -57,11 +58,30 @@ const airPodsList = [
     }
 ];
 
-console.log(airPodsList);
+console.log('chal rahi ha');
+
 
 // html element use in javscript!
 let section_box_contant = document.querySelector('.section-box-contant')
 let watchlist_box = document.querySelector('#watchlist')
+let Login_btn = document.querySelectorAll('#nav-button-one')
+let registor_btn = document.querySelectorAll('#nav-button-two')
+
+// login button
+Login_btn.forEach((btn, index) => {
+    btn.addEventListener('click', ()=> {
+        console.log('login');
+        window.location = './login.html'
+    })
+})
+
+// registon button
+registor_btn.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+        console.log('registor'); 
+        window.location = './registor.html'
+    })
+})
 
 // renderScreen Function!
 airPodsList.map((item, index) => {
