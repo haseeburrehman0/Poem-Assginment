@@ -1,3 +1,6 @@
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+import { auth } from "../config.js";
+
 // airpods object list
 const airPodsList = [
     {
@@ -58,7 +61,18 @@ const airPodsList = [
     }
 ];
 
-console.log('chal rahi ha');
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      console.log(uid);
+      console.log('user login ha');
+      
+    } else {
+      console.log('user login nahi ha');
+      
+    }
+  });
 
 
 // html element use in javscript!
