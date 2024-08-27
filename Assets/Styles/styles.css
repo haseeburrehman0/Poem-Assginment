@@ -125,6 +125,19 @@
     width: 270px;
     height: 290px;
     background-color: #fff;
+    cursor: pointer;
+}
+
+.card-desgin:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* transition: .2s ease;
+    transition-duration: 1s; */
+    position: relative;
+    bottom: 5px;
+}
+
+#readMoreBtn {
+    font-size: 12px;
 }
 
 .change-text {
@@ -132,10 +145,10 @@
     color: #c8c8c8;
 }
 
-.div-box img {
+/* .div-box img {
     width: 60px;
     height: 50;
-}
+} */
 
 .second-banner-contant img {
     width: 100%;
@@ -276,7 +289,7 @@
     width: 100%;
     height: 460px;
     background-color: var(--primary);
-} 
+}
 
 .foter-content div a {
     line-height: 40px;
@@ -362,9 +375,10 @@
     .carousel-item img {
         height: 110px;
     }
+
     .box-color {
         display: none;
-    } 
+    }
 }
 
 @media only screen and (max-width: 622px) {
@@ -433,17 +447,21 @@
         height: 35px;
         margin-top: 10px;
     }
+
     .custom-box {
         width: 70px;
         height: 70px;
     }
-    .Recommended-box  {
+
+    .Recommended-box {
         width: 300px;
         height: 600px;
     }
+
     .Recommended-box video {
         width: 300px;
     }
+
     .box-recommended {
         width: 100px;
         height: 100px;
@@ -454,6 +472,7 @@
         bottom: 60px;
         left: 100px;
     }
+
     .box-recommended img {
         width: 70px;
         height: 70px;
@@ -461,21 +480,27 @@
         top: 13px;
         left: 13px;
     }
+
     .reason-box div h4 {
         font-size: 10px;
     }
+
     .reason-box div button {
         margin-right: 5px;
     }
+
     .approved-section div img {
         width: 20%;
     }
+
     #footer-images {
         display: none;
     }
+
     .footer-log-img {
         width: 50px;
     }
+
     .input-nav img {
         width: 12px;
         background-color: transparent;
@@ -483,6 +508,7 @@
         right: 22px;
         bottom: 4px;
     }
+
     .footer-three {
         width: 100%;
         height: 70px;
@@ -490,16 +516,19 @@
         bottom: 0;
         z-index: 2;
         background-color: #fff;
-    } 
+    }
+
     .box-color {
         display: flex;
         position: fixed;
         top: 0;
         z-index: 2;
     }
+
     .scroller {
         margin-top: 72px;
     }
+
     .footer-three-icon img {
         width: 35px;
     }
@@ -511,9 +540,11 @@
         height: 280px;
         background-color: #fff;
     }
+
     #footer-log-img {
         width: 100px;
     }
+
     .footer-text-h4 h4 {
         font-size: 18px;
     }
