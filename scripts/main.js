@@ -1,5 +1,6 @@
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
-import { auth } from "../config.js";
+import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+import { getDocs, collection, query, where } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { auth, db } from "../config.js";
 
 // airpods object list
 const airPodsList = [
@@ -61,41 +62,52 @@ const airPodsList = [
     }
 ];
 
-
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-      const uid = user.uid;
-      console.log(uid);
-      console.log('user login ha');
-      
-    } else {
-      console.log('user login nahi ha');
-      
-    }
-  });
-
-
 // html element use in javscript!
 let section_box_contant = document.querySelector('.section-box-contant')
 let watchlist_box = document.querySelector('#watchlist')
-let Login_btn = document.querySelectorAll('#nav-button-one')
-let registor_btn = document.querySelectorAll('#nav-button-two')
+let login_button_section = document.querySelector('#login_button_section')
+let user_img = document.querySelector('#user_img')
+let logout_btn = document.querySelector('.logout_btn')
 
-// login button
-Login_btn.forEach((btn, index) => {
-    btn.addEventListener('click', ()=> {
-        console.log('login');
-        window.location = './login.html'
-    })
-})
 
-// registon button
-registor_btn.forEach(btn => {
-    btn.addEventListener('click', ()=> {
-        console.log('registor'); 
-        window.location = './registor.html'
-    })
-})
+
+// user is login or not
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        const uid = user.uid;
+        const q = query(collection(db, "users"), where("uid", "==", uid));
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+            let data = doc.data();
+            console.log(data);
+            user_img.src = data.userImage;
+        });
+        console.log('user login ha');
+    } else {
+        console.log('user login nahi ha');
+        login_button_section.innerHTML = `<div>
+        <div class="nav-button d-flex gap-2 mt-3">
+        <button class="rounded" id="nav-button-one">Log in</button>
+        <button class="rounded" id="nav-button-two">Register</button></div> 
+        </div>`
+
+        let Login_btn = document.querySelector('#nav-button-one')
+        let registor_btn = document.querySelector('#nav-button-two')
+
+        // login button
+        Login_btn.addEventListener('click', () => {
+            console.log('login');
+            window.location = './login.html'
+        })
+
+        // registon button
+        registor_btn.addEventListener('click', () => {
+            console.log('registor');
+            window.location = './registor.html'
+        })
+
+    }
+});
 
 // renderScreen Function!
 airPodsList.map((item, index) => {
@@ -119,7 +131,7 @@ airPodsList.map((item, index) => {
     readMoreBtn.forEach((btn, index) => {
         btn.addEventListener('click', () => {
             // console.log(index);
-            localStorage.setItem('sendLocal',JSON.stringify(airPodsList[index]))  
+            localStorage.setItem('sendLocal', JSON.stringify(airPodsList[index]))
         })
     })
 })
@@ -198,4 +210,26 @@ watchList.map((item, index) => {
                 </div>
             </div>
     `
+})
+
+logout_btn.addEventListener('click', event => {
+    event.preventDefault()
+    signOut(auth).then(() => {
+        Swal.fire({
+            title: 'Logout Your Self!',
+            text: 'Do you want to Logout',
+            icon: 'info',
+            confirmButtonText: 'Logout'
+        })
+            .then((result) => {
+                if (result.isConfirmed) {
+                    window.location = './login.html'
+                }
+            });
+    }).catch((error) => {
+        console.log('nahi ho raha ha logout');
+
+    });
+
+    console.log('logout');
 })

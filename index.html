@@ -33,7 +33,7 @@
         </div>
     </footer>
 
-    
+
 
     <section id="Container">
 
@@ -61,8 +61,8 @@
                     <img src="./Assets/Images/mic-blue.svg" alt="">
                 </div>
                 <div class="nav-button d-flex gap-2 mt-3 d-md-none d-none d-lg-flex">
-                    <button class="rounded login_btn" id="nav-button-one">Log in</button>
-                    <button class="rounded" id="nav-button-two">Register</button>
+                    <button class="rounded login_btn">Log in</button>
+                    <button class="rounded">Register</button>
                 </div>
             </nav>
         </section>
@@ -77,13 +77,15 @@
                     <img id="bar" width="30" src="./Assets/Images/bar.svg" alt="Bar">
                     <img id="logo" width="140" src="./Assets/Images/logo.svg" alt="Logo">
                 </div>
-                <div class="input-nav d-flex mt-2">
+                <div class="input-nav d-flex mt-2  d-none d-sm-none">
                     <input class="rounded" type="text" placeholder="Search">
                     <img src="./Assets/Images/mic-blue.svg" alt="">
                 </div>
-                <div class="nav-button d-flex gap-2 mt-3 d-md-none d-none d-lg-flex">
-                    <button class="rounded" id="nav-button-one">Log in</button>
-                    <button class="rounded" id="nav-button-two">Register</button>
+                <div id="login_button_section">
+                    <div id="user_login_section" class="mt-3">
+                        <button id="nav-button-one" class="rounded logout_btn">Logout</button>
+                        <img id="user_img" src="https://i.pinimg.com/236x/53/6c/63/536c6323d439596e766f055498e775e4.jpg" alt="">
+                    </div>
                 </div>
             </nav>
         </section>
@@ -93,7 +95,7 @@
         <!-- Section Two Started -->
 
         <section class="nav-two">
-            <div class="container d-flex justify-content-between text-center mt-2">
+            <div id="singal_card" class="container d-flex justify-content-between text-center mt-2">
                 <div class="nav-two-hover">
                     <img width="30" src="./Assets/Images/mobiles.svg" alt="">
                     <p class="small-font text-center mt-1">Mobiles</p>
@@ -357,7 +359,7 @@
                         <img src="./Assets/Images/22 off.png" alt="">
                     </div>
                 </div> -->
-            <!-- </div> -->
+                <!-- </div> -->
 
         </section>
 
@@ -878,7 +880,7 @@
                 </div>
             </div>
         </footer>
-        
+
         <footer class="footer-two">
             <div class="container">
                 <div class="d-flex justify-content-center aligin-items-center">
