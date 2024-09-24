@@ -36,7 +36,7 @@ form.addEventListener('submit', async event => {
             })
                 .then((result) => {
                     if (result.isConfirmed) {
-                        window.location = './login.html'
+                        // window.location = './login.html'
                     }
                 });
         })

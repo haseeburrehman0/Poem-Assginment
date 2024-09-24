@@ -1,0 +1,62 @@
+.login_section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box {
+    width: 410px;
+    padding: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 18px;
+}
+
+.login_box form > input {
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.loginWith img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.fb_login {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.fb_login:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+.google_login:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+.google_login {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.loginWith img:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#myfile::file-selector-button {
+    width: 150px;
+    height: 46px;
+    padding-right: 10px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}

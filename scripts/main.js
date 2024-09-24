@@ -70,7 +70,6 @@ let user_img = document.querySelector('#user_img')
 let logout_btn = document.querySelector('.logout_btn')
 
 
-
 // user is login or not
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -79,8 +78,7 @@ onAuthStateChanged(auth, async (user) => {
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             let data = doc.data();
-            console.log(data);
-            user_img.src = data.userImage;
+            userIcon.src = data.photoUrl;
         });
         console.log('user login ha');
     } else {
@@ -131,7 +129,7 @@ airPodsList.map((item, index) => {
     readMoreBtn.forEach((btn, index) => {
         btn.addEventListener('click', () => {
             // console.log(index);
-            localStorage.setItem('sendLocal', JSON.stringify(airPodsList[index]))
+            localStorage.setItem('airPods', JSON.stringify(airPodsList[index]))
         })
     })
 })
@@ -230,6 +228,5 @@ logout_btn.addEventListener('click', event => {
         console.log('nahi ho raha ha logout');
 
     });
-
     console.log('logout');
 })
