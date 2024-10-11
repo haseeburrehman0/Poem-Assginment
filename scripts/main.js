@@ -1,5 +1,5 @@
-import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
-import { getDocs, collection, query, where } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+import { getDocs, collection, query, where } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
 import { auth, db } from "../config.js";
 
 // airpods object list
@@ -78,7 +78,7 @@ onAuthStateChanged(auth, async (user) => {
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             let data = doc.data();
-            userIcon.src = data.photoUrl;
+            user_img.src = data.userImage;
         });
         console.log('user login ha');
     } else {
