@@ -1,5 +1,6 @@
-import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider   } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
-import { auth, provider } from "../config.js";
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+import { auth } from "../config.js";
+const provider = new GoogleAuthProvider();
 
 // html element use in javscript
 let Login_btn = document.querySelectorAll('#nav-button-one')
